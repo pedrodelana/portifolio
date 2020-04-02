@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        {% block head %}
+        <title>Rocketseat Launcher</title>
+        {% endblock %}
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="/portifolio">Videos</a>
+            </div>
+        </header>
+
+        {% block content %}
+
+        {% endblock %}
+
+        <footer>
+            <div id="links-footer" class="links">
+                <a href="https://github.com/Rocketseat" target="_blank">Github</a>
+                <a href="https://twitter.com/rocketseat" target="_blank">Twitter</a>
+                <a href="https://pt.linkedin.com/school/rocketseat/" target="_blank">LinkedIn</a>
+            </div>
+        </footer>
+    </body>
+</html>
