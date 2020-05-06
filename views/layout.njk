@@ -22,9 +22,10 @@
 
         <footer>
             <div id="links-footer" class="links">
-                <a href="https://github.com/Rocketseat" target="_blank">Github</a>
-                <a href="https://twitter.com/rocketseat" target="_blank">Twitter</a>
-                <a href="https://pt.linkedin.com/school/rocketseat/" target="_blank">LinkedIn</a>
+            {% for link in data.links %}
+                <a href="{{ link.url }}" target="_blank"> {{ link.name }} </a>
+
+            {% endfor %}
             </div>
         </footer>
     </body>

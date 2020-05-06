@@ -13,12 +13,26 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(req, res){
-    return res.render("about");
+    const data={
+        avatar_url: "https://avatars2.githubusercontent.com/u/11432369?s=460&u=fd4f46670037eaebcb65b9cf3b6baa03f3364a12&v=4",
+        name: "Pedro Lana",
+        role: "Desenvolvedor Junior",
+        description: 'A procura de um sonho.',
+        links:[
+            {name: "Github", url:"https://github.com/pedrodelana?tab=repositories"},
+            {name: "Github", url:"https://github.com/pedrodelana?tab=repositories"},
+            {name: "Github", url:"https://github.com/pedrodelana?tab=repositories"}
+        ]
+    }
+
+
+
+    return res.render("about", {data});
 
 })
 
 server.get("/portifolio", function(req, res){
-    return res.render("portifolio");
+    return res.render("portifolio", {items: videos});
 
 })
 
