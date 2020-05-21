@@ -1,26 +1,22 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-<title>Portifolio-RocketSeat</title>
+<title>{{item.title}}</title>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 {% endblock %}
 
 {% block content %}
 
-        <div id="wrapper">
-            <h1>Aulas</h1>
+        <div id="wrapper" class="video">
+            <h1>{{item.title}}</h1>
         </div>
 
-        <section class="cards">
-        {% for item in items%}   
-        
+        <section class="video">
+                
             <div id="{{item.id}}" class="card">
-                <div class="card__image-container {{ 'featured-wrapper' if item.featured }}">
-                    <img src="https://img.youtube.com/vi/{{item.id}}/mqdefault.jpg" alt="Imagem de {{item.title}}">
-                    {% if item.featured %}
-                    <div class="featured">Featured</div>
-                    {% endif %}
+                <div class="card__video-container">
+                    <iframe src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
                 </div>
                 <div class="card_content">
                     <p>{{item.title}}</p>
@@ -30,10 +26,8 @@
                     <p class="card__price">{{item.price}}</p>
                 </div>
             </div>
-         
-        {% endfor %}
+             
         </section>
 
-        <script src="scripts.js"></script>
 
 {% endblock %}

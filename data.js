@@ -3,13 +3,14 @@ module.exports = [
         id:"GykTLqODQuU",
         title: "Formulário Animado com JS puro e CSS Animation | Mayk Brito",
         duration: "57min",
-        price:"Free"
+        price:"Free",
+        featured: true
     },
     {
         id:"2alg7MQ6_sI",
         title: "Como usar Git e Github na prática: Guia para iniciantes | Mayk Brito",
         duration: "33min",
-        price:"Free"
+        price:"Free"        
     },
     {
         id:"ghTrp1x_1As",
@@ -21,7 +22,8 @@ module.exports = [
         id:"6WB16wZS61c",
         title: "React Hooks na prática | Diego Fernandes",
         duration: "32min",
-        price:"Free"
+        price:"Free",
+        featured: true
     },
     {
         id:"u99tNt3TZf8",
@@ -33,6 +35,7 @@ module.exports = [
         id:"-j7vLmBMsEU",
         title: "Deploy de aplicação NodeJS e ReactJS no Heroku | Diego Fernandes",
         duration: "24min",
-        price:"Free"
+        price:"Free",
+        featured: true
     }
 ]
